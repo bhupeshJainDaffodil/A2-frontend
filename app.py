@@ -10,8 +10,8 @@ st.set_page_config(
 )
 
 # ─── API configuration ─────────────────────────────────────────────
-API_URL = "http://localhost:8000/predict"  # change if deployed
-
+# API_URL = "http://localhost:8000/predict" 
+API_URL= 'https://a2-backend-y07r.onrender.com'
 # ─── Title & description ───────────────────────────────────────────
 st.title("🏦 Bank Customer Churn Prediction")
 st.markdown("""
