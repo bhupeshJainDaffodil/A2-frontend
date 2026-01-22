@@ -66,7 +66,7 @@ if submitted:
 
     try:
         with st.spinner("Calling prediction service..."):
-            response = requests.post(API_URL, json=payload, timeout=5)
+            response = requests.post(API_URL+'/predict', json=payload, timeout=5)
 
         if response.status_code == 200:
             result = response.json()
